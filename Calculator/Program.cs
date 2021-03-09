@@ -32,7 +32,12 @@ namespace Calculator
             Console.WriteLine("1.Addition\n2.Substraction\n3.Multiplication\n4.Division");
             Console.WriteLine("  ");
             Console.Write("Please enter your choice:");
-
+            
+           // if (Console.ReadLine() = char)
+           // {
+           //     default;
+           // }
+           //else
             int userChoice = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter first number: ");
@@ -43,7 +48,8 @@ namespace Calculator
             //double result = ValueTuple';
             //double result = Convert.ToInt32(Console.Read());
             double result = 0;
-            
+
+
 
             Console.WriteLine("The result is:  {0}", result);
             Console.ReadKey();
@@ -104,7 +110,7 @@ namespace Calculator
 
         {
             double result = firstNumber * secondNumber;
-            return result;
+            return Main();
 
 
         }
@@ -117,7 +123,7 @@ namespace Calculator
             if (secondNumber == 0)
             {
                 Console.WriteLine("You cannot divide with 0, please repeat entering correct divider number.");
-                return secondNumber;
+                return MainMenu();
 
             }
             else
