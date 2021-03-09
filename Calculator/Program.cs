@@ -132,5 +132,27 @@ namespace Calculator
             //Console.ReadKey();//only at the end because no use in every method
             
         }
+        public static double OverloadArray_Additional(double[] numbers)
+        {
+            double sum = 0;
+
+            foreach (double num in numbers)
+            {
+                sum = num + sum;
+            }
+            return sum;
+
+        }
+        public static double OverloadArray_Substraction(double[] numbers)
+        {
+            double sum = 0;
+
+            foreach (double num in numbers)
+            {
+                sum = sum - num;
+            }
+            return sum;
+
+        }
     }
 }

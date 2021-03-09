@@ -123,52 +123,80 @@ namespace CalculatorTest
             //Assert  
             Assert.Equal(expectedValue, sub, 1);
         }
+
         [Fact]
-        public void Task_Addition_Array()
+        public void Task_OverArrayAddition_Number()
         {
-            //Arrange
-            int[] num = new number;
-            int[] number = { 1, 2, 3, 4, 5 };
-            int expectedValue = 15;
+            // Arrange  
+            double[] num = {1, 2, 3, 4, 5 };
+            double expectedValue = 15;
 
+            // Act  
+            double subArray = Calculator.Program.OverloadArray_Additional(num);
 
-            //Act
-            //double z = new z + z;
-
-            for (int i=0; i <= num; i++)
-            {
-                double sub = Calculator.Program.Addition[i + i+];
-                double sub = new sub + sub;
-            }
-            //double sub = Calculator.Program.Addition.Array(num);
-
-            //Assert
-            Assert.Equal(expectedValue, sub);
-
-
+            //Assert  
+            Assert.Equal(expectedValue, subArray, 1);
         }
+
         [Fact]
-        public void Task_Substraction_Array()
+        public void Task_OverArraySubstraction_Number()
         {
-            //Arrange
+            // Arrange  
             double[] num = { 1, 2, 3, 4, 5 };
-            double expectedValue = -13;
+            double expectedValue = -15;
 
+            // Act  
+            double subArray = Calculator.Program.OverloadArray_Substraction(num);
 
-            //Act
-            //double z = new z + z;
-
-            for (int i = 0; i <= num; i++)
-            {
-                double sub = Calculator.Program.Substraction[i];
-                double sub = sub - new sub;
-            }
-            //double sub = Calculator.Program.Addition.Array(num);
-
-            //Assert
-            Assert.Equal(expectedValue, sub);
-
-
+            //Assert  
+            Assert.Equal(expectedValue, subArray, 1);
         }
+        //    //[Fact]
+        //    //public void Task_Addition_Array()
+        //    //{
+        //    //    Arrange
+        //    //    int[] num = new number;
+        //    //    int[] number = { 1, 2, 3, 4, 5 };
+        //    //    int expectedValue = 15;
+
+
+        //    //    Act
+        //    //    double z = new z + z;
+
+        //    //    for (int i = 0; i <= num; i++)
+        //    //    {
+        //    //        double sub = Calculator.Program.Addition[i + i +];
+        //    //        double sub = new sub + sub;
+        //    //    }
+        //    //    double sub = Calculator.Program.Addition.Array(num);
+
+        //    //    Assert
+        //    //    Assert.Equal(expectedValue, sub);
+
+
+        //}
+        //    [Fact]
+        //    public void Task_Substraction_Array()
+        //    {
+        //        //Arrange
+        //        double[] num = { 1, 2, 3, 4, 5 };
+        //        double expectedValue = -13;
+
+
+        //        //Act
+        //        //double z = new z + z;
+
+        //        for (int i = 0; i <= num; i++)
+        //        {
+        //            double sub = Calculator.Program.Substraction[i];
+        //            double sub = sub - new sub;
+        //        }
+        //        //double sub = Calculator.Program.Addition.Array(num);
+
+        //        //Assert
+        //        Assert.Equal(expectedValue, sub);
+
+
+        //    }
     }
 }
